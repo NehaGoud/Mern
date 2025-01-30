@@ -14,7 +14,7 @@ const allowedOrigins = process.env.FRONTEND_URL.split(',');
 
 app.use(express.json());
 app.use(cookieParser());
-app.use(cors({origin:allowedOrigins, credentials: true}))
+app.use(cors({origin:allowedOrigins, credentials: true}));
 
 //API endpoints
 app.get('/',  (req, res)=> res.send("API Working"));
